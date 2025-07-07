@@ -1,0 +1,407 @@
+@font-face { 
+    font-family: 'Marvel'; 
+    src: url('../CranberryJamSerif.woff2') format('woff2'); 
+    font-weight: normal; 
+    font-style: normal; 
+    font-display: swap;
+}
+
+
+
+@font-face { 
+    font-family: 'Sensei'; 
+    src: url('../Sensei-Medium.woff2') format('woff2'); 
+    font-weight: normal; 
+    font-style: normal; 
+    font-display: swap;
+}
+    *,* ::before ::after{padding:0;
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+} 
+@import url("fonts.css");
+a, 
+*::before, 
+*::after { 
+display: inline-block; 
+color: black;}
+ul, li {
+    list-style: none;
+}
+@import url("fonts.css");
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav, footer, header, aside{display: block;}
+
+input,button,textarea{font-family:inherit;}input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::--Focus-Inner {padding: 0; border:0;}
+a, a:visited{text-decoration: none;}
+oshover {text-decoration: none;}
+ul-11{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;}
+
+body{
+    font-family: Sensei;
+    color: black;
+}
+
+[class*=__container]{
+    
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+[class*=__button]{
+    border-radius: 10px;
+    background-color:  rgba(11,247,255,1);
+   text-align: center;
+   display: flex;
+   padding: 8px 16px;
+   transition: all 0.2s ease 0s;
+   transition: all 0.3 backround-color 0.2s ;
+   
+   
+}
+@media (any-hover: hover) {
+    [class*=__button]:hover{
+        color: aliceblue;
+        transform: scale(1.2);
+        background-color: rgb(0, 133, 228);
+    }  
+}
+.border{
+    padding-top: 100px;
+}
+.borderr{
+    padding-left: 1000px;
+}
+.heroo__button{
+    background-color: #ffffff00;
+    color: rgba(11,247,255,1);;
+    z-index: 3;
+}
+.wrapper{
+    min-height: 100%;
+}
+
+.hero {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
+    
+    background-size: cover;
+  
+  background-attachment: fixed;
+}
+
+.hero__container {
+    
+   margin: 0 auto;
+   padding: 20px;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.hero__header {
+    padding-top:30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3.883495svh;
+}
+
+.hero__logo {}
+
+.hero__logo:not(:last-child) {
+    margin-bottom: 1px;
+}
+@media (max-width: 767.68px) {
+    .borderr{
+    padding-left: 700px;
+    
+}
+}
+@media (max-width: 1020px) {
+    .borderr{
+    padding-left: 700px;
+    
+}
+}
+@media (max-width: 699px) {
+    .borderr{
+    padding-left: 300px;
+    
+}
+}
+.hero__menu {}
+
+.menu {text-align: center;
+display: flex;}
+
+.menu__list {
+    display: flex;
+    column-gap: 16px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+}
+.menu__list:hover {
+      
+}
+.menu__item {
+   transition: all 0.2s ease 0s;
+}
+.menu__item:hover {
+  
+    padding-inline: 30px;
+    transform: scale(1.5);
+    justify-content: center;
+    
+}
+.menu__link {
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero__content {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column ;
+    row-gap: 2.427184;
+}
+
+.hero__title {
+    padding-bottom: 20px;
+    font-size: 90px;
+    
+    background: linear-gradient(90deg, rgba(11,247,255,1) 0%, rgba(11,146,180,1) 31%, rgba(0,212,255,1) 82%);
+    padding-inline: 40px;
+}
+
+.hero__label {
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(11,247,255,1) 0%, rgba(11,146,180,1) 31%, rgba(0,212,255,1) 82%);
+    
+}
+
+.hero__button {
+    max-width: 100px;
+}
+
+.hero__image {
+    
+    
+}
+@media (max-width: 767.68px) {
+    .hero__title {
+        font-size: 66px;
+    }
+}
+
+@media (max-width: 379.11px) {
+    .menu__list{
+        padding-top: 10px;
+    }
+
+    .menu__list:hover{
+        padding-top: 30px;
+    }
+}
+
+.header-block {
+    text-align: center;
+}
+
+.header-block:after {
+    content: " ";
+    width: 120px;
+    height: 2px;
+    background-color: rgb(0, 232, 209);
+}
+.header__block__title {
+    font-family: "Marvel" , serif;
+    text-transform: uppercase;
+    font-size: 64px;
+}
+.header__block__title:not(:last-child){
+margin-bottom: 8px;
+}
+
+
+
+
+.header-block__text {
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.header__block__text p:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+/* ===== MODAL ===== */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0 0 0 / .7);
+    display: none;              /* ховаємо за замовчуванням */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .modal--open {                /* коли активна */
+    display: flex;
+  }
+  .modal__inner {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+  .modal__inner img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+  .modal__close {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .modal__inner {
+    position: relative;
+    width: 90vw;
+    max-width: 600px;
+    height: auto;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .modal__inner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  }
+  
+  /* ===== MODAL АДАПТИВ ===== */
+.modal__inner {
+    position: relative;
+    width: 90vw;
+    max-width: 600px;
+    height: auto;
+    max-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .modal__inner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Модалка на телефоні */
+  @media (max-width: 480px) {
+    .modal__inner {
+      width: 95vw;
+      padding: 0.5rem;
+      border-radius: 6px;
+    }
+  
+    .modal__inner img {
+      border-radius: 4px;
+    }
+  
+    .modal__close {
+      top: -10px;
+      right: -10px;
+      width: 28px;
+      height: 28px;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  #bg-canvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(180deg, #3b0a63 0%, #ffcce5 100%);
+  }
+
+  /* ---- hint overlay ---- */
+.scroll-hint{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.75);
+    color:#fff;
+    display:none;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    z-index:1100;
+  }
+  .scroll-hint .arrow{
+    font-size:56px;
+    animation: bounce 1s infinite;
+  }
+  @keyframes bounce{
+    0%,100%{transform:translateY(0)}
+    50%{transform:translateY(10px)}
+  }
+  
+  /* ---- картка внизу ---- */
+  #cardContainer{
+    width:100%;
+    text-align:center;
+    margin-top:80px;          /* трохи відступу від контенту */
+  }
+  #cardContainer img{
+    max-width:90%;
+    height:auto;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+  }
+  
+
+  
+  
+  
+  
